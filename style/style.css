@@ -1,0 +1,126 @@
+#viewport {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a#signin {
+    border: 1px solid blue;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 7%;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+a#signin:hover {
+    opacity: 0.9;
+}
+
+#logo {
+    margin-top: 200px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#search-area {
+    margin-top: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#search-bar {
+    width: 500px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    border: 1px solid rgb(151, 151, 151);
+    box-shadow: 2px 2px 2px rgb(134, 134, 134);
+}
+
+#search-bar:hover, #search-bar:focus {
+    box-shadow: 3px 3px 3px rgb(134, 134, 134);
+}
+
+#buttons {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: rgb(218, 218, 218);
+    border: none;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: rgb(201, 198, 198);
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(235, 235, 235);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#country {
+    display: flex;
+    text-align: left;
+    background-color: rgb(235, 235, 235);
+    line-height: 20px;
+    color: rgb(121, 121, 121);
+    padding: 0 0 0 20px;
+    border-top: 1px solid rgb(206, 206, 206);
+}
+
+#footer-links {
+    line-height: 20px;
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    color: rgb(121, 121, 121);
+    border-top: 1px solid rgb(204, 204, 204);
+    padding: 0 0 0 20px;
+}
+
+#footer-links-left {
+    display: flex;
+}
+
+#footer-links-right {
+    display: flex;
+}
