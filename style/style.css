@@ -1,50 +1,46 @@
-#viewport {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
-
-
 header {
     display: flex;
+    width: 100%;
     justify-content: flex-end;
     align-items: center;
 }
 
-a{
-    margin: 10px;
+header a {
+    margin: 0 10px 0 10px;
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
 }
 
-a:hover {
+header a:hover {
     text-decoration: underline;
 }
 
-a#signin {
-    border: 1px solid blue;
-    padding: 10px;
-    background-color: blue;
-    color: white;
-    border-radius: 7%;
-    font-weight: bold;
-    font-size: 14px;
+#apps {
+    opacity: 0.70;
 }
 
-a#signin:hover {
-    opacity: 0.9;
+#apps:hover {
+    opacity: 1;
+}
+
+#signin {
+    background-color: blue;
+    padding: 12px;  
+    border-radius: 5%;
+    color: white;
+    font-weight: bold;
+}
+
+#signin:hover {
+    opacity: 0.70;
 }
 
 #logo {
-    margin-top: 200px;
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-top: 200px;
 }
 
 #search-area {
@@ -55,72 +51,85 @@ a#signin:hover {
 }
 
 #search-bar {
-    width: 500px;
+    width: 600px;
     height: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    border: 1px solid rgb(151, 151, 151);
-    box-shadow: 2px 2px 2px rgb(134, 134, 134);
+    border: 1px solid rgb(228, 228, 228);
+    box-shadow: 2px 2px 2px rgb(218, 218, 218);
 }
 
 #search-bar:hover, #search-bar:focus {
-    box-shadow: 3px 3px 3px rgb(134, 134, 134);
+    box-shadow: 3px 3px 3px rgb(218, 218, 218);
 }
 
 #buttons {
-    width: 100%;
-    margin-top: 20px;
     display: flex;
+    width: 100%;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .button {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
-    background-color: rgb(218, 218, 218);
-    border: none;
-    transition: 0.3s;
+    margin: 0 10px 0 10px;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(238, 238, 238);
+    padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    color: black;
+    opacity: 0.65;
+    transition: 0.3s;
 }
 
 .button:hover {
-    background-color: rgb(201, 198, 198);
+    border: 1px solid rgb(187, 187, 187);
     cursor: pointer;
+    opacity: 1;
 }
 
 footer {
-    background-color: rgb(235, 235, 235);
-    position: fixed;
-    left: 0;
+    display: block;
+    position: absolute; 
     bottom: 0;
+    left: 0;
     width: 100%;
+    background-color: rgb(235, 235, 235);
 }
 
 #country {
+    border-top: 1px solid rgb(199, 198, 198);
     display: flex;
-    text-align: left;
-    background-color: rgb(235, 235, 235);
-    line-height: 20px;
-    color: rgb(121, 121, 121);
-    padding: 0 0 0 20px;
-    border-top: 1px solid rgb(206, 206, 206);
+    justify-content: flex-start;
+    padding: 13px 0 13px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(116, 116, 116);
 }
 
 #footer-links {
-    line-height: 20px;
+    border-top: 1px solid rgb(199, 198, 198);
     display: flex;
-    background-color: rgb(235, 235, 235);
-    color: rgb(121, 121, 121);
-    border-top: 1px solid rgb(204, 204, 204);
-    padding: 0 0 0 20px;
+    padding: 13px 0 13px 20px;
 }
 
-#footer-links-left {
-    display: flex;
+#footer-links a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+    margin: 0 10px 0 0;
 }
 
-#footer-links-right {
+#footer-links a:hover {
+    text-decoration: underline;
+}
+
+#links-left {
     display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#links-right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
 }
